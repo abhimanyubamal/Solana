@@ -1,0 +1,56 @@
+*{
+    text-decoration: none !important;
+    list-style-type: none !important;
+    box-sizing: border-box !important;
+
+}
+
+body{
+    background-color: black;
+}
+
+.bg-header-blue{
+    background: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
+    background-size: cover;
+}
+
+.nav{
+    background: rgba(0, 0, 0, 0.60);
+    padding: 22px 0 18px 0;
+}
+
+.hero-left{
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.hero-right{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.dropdown-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translate(-100%, -100%); */
+    background-color: white;
+    flex-direction: column;
+    display: none;
+}
+
+.dropdown a:hover~.dropdown-content{
+    display: flex;
+
+}
+
+.dropdown a:hover svg{
+    transform: rotate(180deg);
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
