@@ -93,15 +93,61 @@ html {
     background-color: black;
 }
 
-.header-links {
-    color: #848895;
-    text-align: center;
-    font-family: Helvetica;
-    font-size: var(--fs-s3);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.3px;
+.dropdown-content {
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.60);
+    display: none;
+    position: absolute;
+    backdrop-filter: blur(16px);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.dropdown-head-build{
+    color: white !important;
+}
+
+.dropdown-content a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+}
+
+.dropdown a,
+.dropdown svg {
+    position: relative;
+    z-index: 3;
+}
+
+.dropdown a:hover~.dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown a svg{
     transition: all 200ms linear;
+}
+
+.dropdown a:hover svg {
+    transform: rotate(180deg);
+    stroke: white;
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown a {
+    font-family: Helvetica;
+    font-size: 17px;
+    color: #848895;
+}
+
+.dropdown>a {
+    padding-left: 32px;
 }
 
 .mr-8 {
@@ -740,10 +786,6 @@ button:hover {
     opacity: 0;
 }
 
-.header-links:hover {
-    color: white;
-}
-
 .arrow:hover svg {
     rotate: 180deg !important;
 }
@@ -801,4 +843,78 @@ button:hover {
     background-color: #fff;
 }
 
+label {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
 
+label span {
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 20px;
+    background-color: #848895;
+    top: 12px;
+    transition: all 300ms;
+}
+
+#section-4 {
+    display: none;
+}
+
+label span::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    background-color: #848895;
+    top: 8px;
+    left: 0;
+    transition: all 300ms;
+}
+
+label span::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    background-color: #848895;
+    top: -8px;
+    left: 0;
+    transition: all 300ms;
+}
+
+.label-switch span{
+    background-color: transparent;
+}
+
+.label-switch span::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.label-switch span::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.top-text{
+    transition: all 200ms linear;
+}
+
+.top-text:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-head{
+    transition: all 200ms linear;
+}
+
+.dropdown-head:hover{
+    color: white;
+}
