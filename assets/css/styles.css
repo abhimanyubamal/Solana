@@ -1,9 +1,19 @@
 @import './root.css';
 
+html,
 body {
     background-color: black;
     scroll-behavior: smooth;
-    font-weight: 400;
+    font-weight: 400 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400 !important;
 }
 
 .bg-header-blue {
@@ -305,6 +315,10 @@ body {
     margin-top: var(--section-2-3-margin);
 }
 
+.section-3-top {
+    margin-bottom: 32px;
+}
+
 .tab-links {
     font-family: var(--font-primary);
     font-size: var(--fs-section-1-number-description);
@@ -331,6 +345,7 @@ body {
     font-family: var(--font-primary);
     font-size: var(--fs-l4);
     color: white;
+    width: unset !important;
 }
 
 .tab-right-part {
@@ -651,23 +666,57 @@ label span::after {
     display: none;
 }
 
-.label-switch span{
+.label-switch span {
     background-color: transparent;
 }
 
-.label-switch span::before{
+.label-switch span::before {
     top: 0;
     transform: rotate(45deg);
 }
 
-.label-switch span::after{
+.label-switch span::after {
     top: 0;
     transform: rotate(-45deg);
 }
 
+@media (max-width: 1200px) {
+
+    :root {
+        --fs-section-1-number-1: 81px !important;
+        --fs-section-1-number-2: 86px !important;
+        --fs-section-1-number-3: 90px !important;
+    }
+
+    .header-logo-row {
+        flex-wrap: wrap;
+    }
+}
+
+
 @media (max-width: 992px) {
+
+    :root {
+        --fs-section-1-number-1: 71px !important;
+        --fs-section-1-number-2: 76px !important;
+        --fs-section-1-number-3: 80px !important;
+        --fs-section-1-number-description: 22px !important;
+        --fs-s3: 20px !important;
+        --fs-m3: 35px !important;
+        --fs-m1: 28px !important;
+        --fs-hero-heading: 62px !important;
+        --fs-hero-sub-heading: 60px !important;
+        --fs-hero-para: 25px !important;
+        --fs-l3: 46px !important;
+        --fs-l5: 46px !important;
+    }
+
     label {
         display: block;
+    }
+
+    .section-1-left-heading{
+        max-width: 100%;
     }
 
     .menu {
@@ -696,4 +745,77 @@ label span::after {
         margin-top: 16px;
         margin-bottom: 16px;
     }
+
+    .section-2-sub-heading {
+        width: unset !important;
+        display: inline-block;
+    }
+
+    .section-2-col-2 {
+        margin-top: 0;
+    }
+
+    .section-3-tab-para {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --fs-section-1-number-1: 101px !important;
+        --fs-section-1-number-2: 106px !important;
+        --fs-section-1-number-3: 110px !important;
+        --fs-l4: 48px !important;
+        --fs-l5: 44px !important;
+        --fs-s3: 16px !important;
+        --fs-m3: 28px !important;
+        --fs-m1: 22px !important;
+        --fs-hero-heading: 56px !important;
+            --fs-hero-sub-heading: 54px !important;
+            --fs-hero-para: 22px !important;
+            --fs-l3: 38px !important;
+                --fs-l5: 38px !important;
+    }
+
+    .tab-links {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --fs-section-1-number-1: 81px !important;
+        --fs-section-1-number-2: 86px !important;
+        --fs-section-1-number-3: 90px !important;
+        --fs-s3: 14px !important;
+        --fs-m3: 22px !important;
+        --fs-m1: 18px !important;
+        --fs-l3: 35px !important;
+            --fs-l5: 35px !important;
+    }
+}
+
+@media (max-width: 370px) {
+    :root {
+        --fs-section-1-number-1: 61px !important;
+        --fs-section-1-number-2: 66px !important;
+        --fs-section-1-number-3: 70px !important;
+        --fs-s3: 14px !important;
+        --fs-m3: 24px !important;
+        --fs-m1: 18px !important;
+        --fs-hero-heading: 50px !important;
+            --fs-hero-sub-heading: 48px !important;
+            --fs-hero-para: 18px !important;
+            --fs-l3: 30px !important;
+                --fs-l5: 30px !important;
+    }
+}
+
+
+
+.header-logo-row img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
 }
