@@ -743,7 +743,7 @@ button:hover {
     background-color: #9945FF;
     filter: blur(5px);
     position: absolute;
-    z-index: 0;
+    z-index: 4;
     opacity: 0;
     transition: all 300ms linear;
 }
@@ -764,7 +764,7 @@ button:hover {
     color: #9945FF;
     background-color: #19161C;
     border: 1px solid transparent;
-    z-index: 1;
+    z-index: 4;
 }
 
 .to-top:hover{

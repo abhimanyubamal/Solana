@@ -6,10 +6,6 @@
     box-sizing: border-box !important;
 }
 
-html, body{
-    font-weight: 400;
-}
-
 :root{
     /* FONT STYLE  */
     --font-primary: 'helvetica', sans-serif;
