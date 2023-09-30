@@ -8,3 +8,12 @@ window.addEventListener("scroll", () => {
         toTop.style.display = "none";
     }
 });
+
+const viewAll = document.querySelector(".S3-view-all-btn")
+const boxesNone = document.querySelectorAll(".boxes-none")
+
+viewAll.addEventListener("click", () => {
+    boxesNone.forEach((a) => {
+        a.classList.toggle("d-block");
+    })
+})

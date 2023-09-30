@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ html{
 
 .pink-blur {
     content: '';
-    width: 633.226px;
+    width: 100%;
     height: 642px;
     top: 50%;
     left: 50%;
@@ -46,7 +46,7 @@ html{
     max-width: 563px;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 94px;
+    font-size: var(--fs-largest);
     font-style: normal;
     font-weight: 400;
     line-height: 96px;
@@ -57,7 +57,7 @@ html{
     max-width: 390px;
     color: #C4C4C4;
     font-family: Helvetica;
-    font-size: 21px;
+    font-size: var(--fs-hero-para);
     font-style: normal;
     font-weight: 400;
     line-height: 24.336px;
@@ -70,7 +70,7 @@ html{
     color: #000;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -84,7 +84,7 @@ html{
     color: #FFF;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -97,7 +97,7 @@ html{
     color: #848895;
     text-align: center;
     font-family: Helvetica;
-    font-size: 17px;
+    font-size: var(--fs-s3);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -115,7 +115,7 @@ html{
 .pg-2-S2-main-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 39px;
+    font-size: var(--fs-l4);
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -132,7 +132,7 @@ html{
     left: 0;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 11px;
+    font-size: var(--fs-smallest);
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
@@ -142,7 +142,7 @@ html{
     max-width: 387px;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 18px;
+    font-size: var(--fs-s2);
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
@@ -156,7 +156,7 @@ html{
 .pg-2-S2-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 38px;
+    font-size: var(--fs-l3);
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
@@ -166,7 +166,7 @@ html{
 .pg-2-S2-para {
     color: #C4C4C4;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: var(--fs-m1);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -182,7 +182,7 @@ html{
     left: 0;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 11px;
+    font-size: var(--fs-smallest);
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
@@ -192,7 +192,7 @@ html{
     width: 190px;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 18px;
+    font-size: var(--fs-s2);
     font-style: normal;
     font-weight: 400;
     line-height: 25.2px;
@@ -264,17 +264,17 @@ html{
     position: relative;
 }
 
-.black1{
+.black1 {
     position: relative;
 }
 
-.black1::after{
+.black1::after {
     position: absolute;
     content: '';
     width: 100%;
     height: 40%;
     left: 0%;
-    bottom: 0;
+    bottom: -2%;
     background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .96) 87.44%);
     transition: all .2s linear;
     opacity: 1;
@@ -287,7 +287,7 @@ html{
     width: 100%;
     height: 40%;
     left: 0%;
-    bottom: 0;
+    bottom: -2%;
     background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .96) 87.44%);
     transition: all .2s linear;
     opacity: 1;
@@ -295,10 +295,10 @@ html{
 }
 
 .grey-box {
+    height: 306px;
     background-color: #19161C;
     padding-top: 31px;
     padding-left: 31px;
-    padding-bottom: 34px;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -324,7 +324,7 @@ html{
     max-width: 260px;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: var(--fs-small);
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -337,7 +337,7 @@ html{
 .grey-box-head {
     color: #9945FF;
     font-family: Helvetica;
-    font-size: 12px;
+    font-size: var(--fs-s4);
     font-style: normal;
     font-weight: 400;
     line-height: 19.2px;
@@ -348,7 +348,7 @@ html{
 .grey-box-main-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 19px;
+    font-size: var(--fs-s1);
     font-style: normal;
     font-weight: 400;
     line-height: 20.16px;
@@ -357,7 +357,7 @@ html{
 .grey-box-l-text {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 11px;
+    font-size: var(--fs-smallest);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -372,7 +372,7 @@ html{
 .pg-2-S3-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 37px;
+    font-size: var(--fs-l2);
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
@@ -382,7 +382,7 @@ html{
 .pg-2-S3-para {
     color: #C4C4C4;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: var(--fs-m1);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -399,7 +399,7 @@ html{
 .pg-2-S4-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 36px;
+    font-size: var(--fs-l1);
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
@@ -409,7 +409,7 @@ html{
 .pg-2-S4-para {
     color: #C4C4C4;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: var(--fs-m1);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -432,7 +432,7 @@ html{
 .pg-2-S4-box-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 32px;
+    font-size: var(--fs-m2);
     font-style: normal;
     font-weight: 400;
     line-height: 33.6px;
@@ -442,7 +442,7 @@ html{
     max-width: 393.547px;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: var(--fs-m1);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -456,7 +456,7 @@ html{
     color: #FFF;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -470,7 +470,7 @@ html{
 .pg-2-S4-box2-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 39px;
+    font-size: var(--fs-l4);
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
@@ -480,7 +480,7 @@ html{
     max-width: 505px;
     color: #FFF;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: var(--fs-m1);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -488,6 +488,22 @@ html{
 
 .mt-128 {
     margin-top: 128px;
+}
+
+.S3-view-all-btn {
+    padding: 13px 21px;
+    border-radius: 24px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-button);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .pg-2-S4-box2-btn {
@@ -498,7 +514,7 @@ html{
     color: #FFF;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -520,7 +536,7 @@ html{
 .pg-2-S5-box-head {
     color: #FFF;
     font-family: Helvetica;
-    font-size: 36px;
+    font-size: var(--fs-l1);
     font-style: normal;
     font-weight: 400;
     line-height: 37.8px;
@@ -530,7 +546,7 @@ html{
     max-width: 400px;
     color: #C4C4C4;
     font-family: Helvetica;
-    font-size: 17px;
+    font-size: var(--fs-s3);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -559,7 +575,7 @@ html{
     color: #000;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -571,7 +587,7 @@ html{
 ::placeholder {
     color: #848895;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
@@ -592,12 +608,13 @@ html{
     color: #FFF;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
     background-color: transparent;
+    white-space: nowrap;
 }
 
 .ml-8 {
@@ -623,11 +640,11 @@ html{
     transition: all 200ms linear;
 }
 
-.footer-grey-round-box:hover{
+.footer-grey-round-box:hover {
     background-color: #fff;
 }
 
-.footer-grey-box:hover{
+.footer-grey-box:hover {
     background-color: #fff;
 }
 
@@ -663,7 +680,7 @@ html{
 .footer-links {
     color: #848895;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 27.3px;
@@ -674,7 +691,7 @@ html{
     color: #848895;
     text-align: center;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: var(--fs-button);
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -715,27 +732,31 @@ button:hover {
     border-bottom: 1px solid #A962FF;
 }
 
-.black:hover::after{
+.black:hover::after {
     opacity: 0;
 }
 
-.black1:hover::after{
+.black1:hover::after {
     opacity: 0;
 }
 
-.header-links:hover{
+.header-links:hover {
     color: white;
 }
 
-.arrow:hover svg{
+.arrow:hover svg {
     rotate: 180deg !important;
 }
 
-.footer-links:hover{
+.footer-links:hover {
     color: white;
 }
 
-.to-top::before{
+.boxes-none {
+    display: none;
+}
+
+.to-top::before {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -748,7 +769,7 @@ button:hover {
     transition: all 300ms linear;
 }
 
-.to-top{
+.to-top {
     right: 32px;
     bottom: 32px;
     position: fixed;
@@ -767,10 +788,17 @@ button:hover {
     z-index: 4;
 }
 
-.to-top:hover{
+.to-top:hover {
     border: 1px solid #9945FF;
 }
 
-.to-top:hover::before{
+.to-top:hover::before {
     opacity: 0.13;
 }
+
+.S3-view-all-btn:hover {
+    color: black;
+    background-color: #fff;
+}
+
+
