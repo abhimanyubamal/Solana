@@ -55,3 +55,21 @@
         --fs-small:16px;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #A962FF 0%, #9945FF 100%);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #9945FF 0%, #A962FF 100%);
+}
+
