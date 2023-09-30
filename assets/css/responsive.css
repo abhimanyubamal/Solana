@@ -1,51 +1,210 @@
+@media (max-width: 992px) {
+    label {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.60);
+        backdrop-filter: blur(12px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        transition: all 300ms;
+        gap: 18px;
+    }
+
+    .dropdown-content {
+        right: calc(-100% - 20px);
+        top: 0;
+    }
+
+    .dropdown>a {
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
 @media (min-width:320px) {
-    .pg-2-S2-main-head{
+    .pg-2-S2-main-head {
         font-size: 20px;
     }
 
-    .pg-2-S2-main-para{
+    .pg-2-S2-main-para {
         font-size: 10px;
     }
 
-    .pg-2-S2-content1 svg{
-        width: 13px;
-        height: 13px;
+    .pg-2-S2-content1 svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .jc-center-xsm {
+        justify-content: end;
+    }
+
+    .mt-4-xsm {
+        margin-top: 24px;
+    }
+
+    :root {
+        --fs-smallest: 6px !important;
+        --fs-s4: 11px !important;
+        --fs-s3: 11px !important;
+        --fs-s2: 15px !important;
+        --fs-s1: 16px !important;
+        --fs-m1: 12px !important;
+        --fs-m2: 24px !important;
+        --fs-l1: 23px !important;
+        --fs-l2: 28px !important;
+        --fs-l3: 26px !important;
+        --fs-l4: 30px !important;
+        --fs-largest: 44px !important;
+        --fs-small: 15px !important;
+        --fs-button: 9px !important;
+        --fs-hero-para: 15px !important;
+    }
+
+    .pg-2-main-head {
+        line-height: 48px;
+    }
+
+    .pg-2-hero-btn1 {
+        padding: 8px 18px;
+    }
+
+    .pg-2-hero-btn2 {
+        padding: 8px 18px;
+    }
+
+    .arrow{
+        left: 125%;
+    }
+
+    .pg-2-S4-box-btn {
+        padding: 10px 18px;
+    }
+
+    .mt-128{
+        margin-top: 50px;
+    }
+
+    .input-box {
+        width: 250px;
+    }
+
+    .S5-box-btn-padding {
+        padding: 8px 24px;
+    }
+
+    .pg-2-S2-main-head {
+        font-size: 14px;
+    }
+
+    .pg-2-S2-main-para {
+        font-size: 8px;
+    }
+
+    .pg-2-S2-main-head::before {
+        top: -20px;
+    }
+
+    .S2-big-img{
+        height: 150px;
+    }
+
+    .pg-2-S2-main-para {
+        line-height: 14px;
+    }
+
+    .grey-box-l-text {
+        font-size: 10px;
+    }
+
+    .footer-l-text{
+        font-size: 13px;
+    }
+
+    .footer-links-head {
+        font-size: 13px;
     }
 }
 
 @media (min-width:576px) {
-    .pg-2-S2-main-head{
+
+    .footer-links-head {
+        font-size: 16px;
+    }
+
+    .footer-l-text{
+        font-size: 16px;
+    }
+
+    .pg-2-S2-main-para {
+        line-height: 27px;
+    }
+
+    .S2-big-img{
+        height: 100%;
+    }
+
+    .pg-2-S2-main-head::before {
+        top: -34px;
+    }
+    .pg-2-hero-btn1 {
+        padding: 11px 21px;
+    }
+
+    .pg-2-hero-btn2 {
+        padding: 11px 21px;
+    }
+    
+    .jc-center-xsm {
+        justify-content: start;
+    }
+
+    .mt-4-xsm {
+        margin-top: 0;
+    }
+
+    .pg-2-S2-main-head {
         font-size: 24px;
     }
 
-    .pg-2-S2-main-para{
+    .pg-2-S2-main-para {
         font-size: 10px;
     }
-    
+
     .arrow {
         left: 100%;
     }
 
-    .mt-128{
+    .mt-128 {
         margin-top: 80px;
     }
 
     :root {
-        --fs-smallest: 8px;
-        --fs-s4: 11px;
-        --fs-s3: 16px;
-        --fs-s2: 15px;
-        --fs-s1: 16px;
-        --fs-m1: 18px;
-        --fs-m2: 28px;
-        --fs-l1: 34px;
-        --fs-l2: 37px;
-        --fs-l3: 35px;
-        --fs-l4: 32px;
-        --fs-largest: 72px;
-        --fs-small: 13px;
-        --fs-button: 13px;
-        --fs-hero-para: 19px;
+        --fs-smallest: 12px !important;
+        --fs-s4: 11px !important;
+        --fs-s3: 16px !important;
+        --fs-s2: 15px !important;
+        --fs-s1: 16px !important;
+        --fs-m1: 18px !important;
+        --fs-m2: 24px !important;
+        --fs-l1: 28px !important;
+        --fs-l2: 28px !important;
+        --fs-l3: 35px !important;
+        --fs-l4: 32px !important;
+        --fs-largest: 72px !important;
+        --fs-small: 15px !important;
+        --fs-button: 10px !important;
+        --fs-hero-para: 19px !important;
     }
 
     .S5-box-btn-padding {
@@ -61,12 +220,16 @@
     }
 
     .pg-2-main-head {
-        line-height: 80px; 
+        line-height: 80px;
     }
 
-    .pg-2-S2-content1 svg{
+    .pg-2-S2-content1 svg {
         width: 15px;
         height: 15px;
+    }
+
+    .pg-2-S4-box-btn {
+        padding: 10px 18px;
     }
 }
 
@@ -76,28 +239,28 @@
     }
 
     :root {
-        --fs-smallest: 10px;
-        --fs-s4: 11px;
-        --fs-s3: 13px;
-        --fs-s2: 15px;
-        --fs-s1: 16px;
-        --fs-m1: 18px;
-        --fs-m2: 28px;
-        --fs-l1: 28px;
-        --fs-l2: 37px;
-        --fs-l3: 38px;
-        --fs-l4: 34px;
-        --fs-largest: 94px;
-        --fs-small: 13px;
-        --fs-button: 13px;
-        --fs-hero-para: 21px;
+        --fs-smallest: 10px !important;
+        --fs-s4: 11px !important;
+        --fs-s3: 13px !important;
+        --fs-s2: 15px !important;
+        --fs-s1: 16px !important;
+        --fs-m1: 18px !important;
+        --fs-m2: 28px !important;
+        --fs-l1: 28px !important;
+        --fs-l2: 37px !important;
+        --fs-l3: 38px !important;
+        --fs-l4: 34px !important;
+        --fs-largest: 94px !important;
+        --fs-small: 13px !important;
+        --fs-button: 13px !important;
+        --fs-hero-para: 21px !important;
     }
 
-    .pg-2-S2-main-para{
+    .pg-2-S2-main-para {
         font-size: 15px;
     }
 
-    .pg-2-S2-main-head{
+    .pg-2-S2-main-head {
         font-size: 34px;
     }
 
@@ -121,7 +284,7 @@
         line-height: 96px;
     }
 
-    .pg-2-S2-content1 svg{
+    .pg-2-S2-content1 svg {
         width: 20px;
         height: 20px;
     }
@@ -138,28 +301,28 @@
     }
 
     :root {
-        --fs-smallest: 11px;
-        --fs-s4: 12px;
-        --fs-s3: 17px;
-        --fs-s2: 18px;
-        --fs-s1: 19px;
-        --fs-m1: 20px;
-        --fs-m2: 32px;
-        --fs-l1: 36px;
-        --fs-l2: 37px;
-        --fs-l3: 38px;
-        --fs-l4: 39px;
-        --fs-largest: 94px;
-        --fs-small: 16px;
-        --fs-button: 15px;
-        --fs-hero-para: 21px;
+        --fs-smallest: 11px !important;
+        --fs-s4: 12px !important;
+        --fs-s3: 17px !important;
+        --fs-s2: 18px !important;
+        --fs-s1: 19px !important;
+        --fs-m1: 20px !important;
+        --fs-m2: 32px !important;
+        --fs-l1: 36px !important;
+        --fs-l2: 37px !important;
+        --fs-l3: 38px !important;
+        --fs-l4: 39px !important;
+        --fs-largest: 94px !important;
+        --fs-small: 16px !important;
+        --fs-button: 15px !important;
+        --fs-hero-para: 21px !important;
     }
 
-    .pg-2-S2-main-head{
+    .pg-2-S2-main-head {
         font-size: 39px;
     }
 
-    .pg-2-S2-main-para{
+    .pg-2-S2-main-para {
         font-size: 18px;
     }
 
@@ -182,7 +345,8 @@
     .footer-grey-box {
         height: 18px;
     }
-    .pg-2-S2-content1 svg{
+
+    .pg-2-S2-content1 svg {
         width: 27px;
         height: 26px;
     }
