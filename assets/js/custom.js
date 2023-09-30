@@ -45,3 +45,22 @@ tabs.forEach((heading) => {
     });
 });
 
+let label = document.querySelector("label");
+let menu = document.querySelector("#menu");
+let open = 0;
+
+label.addEventListener("click", () => {
+    if (open == 0) {
+        menu.style.right = 0;
+        document.body.classList.add("overflow-y-hidden");
+        label.classList.add("label-switch");
+        open++;
+    }
+
+    else {
+        menu.style.right = '-100%';
+        document.body.classList.remove("overflow-y-hidden");
+        label.classList.remove("label-switch");
+        open--;
+    }
+});

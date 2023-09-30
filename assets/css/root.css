@@ -26,20 +26,26 @@
     --section-1-2-margin: 64px;
     --section-2-3-margin: -150px;
     /* PADDING  */
+    --nav-padding: 22px 0 18px 0;
     --section-1-padding: 125px;
     --section-2-padding: 250px;
+    --tab-right-part: 95px 45px 85px 45px;
     /* PAGE-2-FONT-SIZE  */
     --fs-smallest: 11px;
         --fs-s4: 12px;
         --fs-s3: 17px;
-        --fs-s4: 18px;
+        --fs-s2: 18px;
         --fs-s1: 19px;
         --fs-m1: 20px;
         --fs-m2: 32px;
+        --fs-m3: 28px;
         --fs-l1: 36px;
         --fs-l2: 37px;
         --fs-l3: 38px;
         --fs-l4: 39px;
+        --fs-l5: 40px;
+        --fs-gh: 44px;
+        --fs-gp: 22px;
         --fs-largest: 94px;
 }
 
