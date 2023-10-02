@@ -153,6 +153,7 @@ h6 {
 .hero-para {
     font-size: var(--fs-hero-para);
     margin-top: 55px;
+    width: 50% !important;
 }
 
 .hero-button-row {
@@ -174,6 +175,7 @@ h6 {
 
 #section-1 {
     padding-top: var(--section-1-padding);
+    padding-bottom: 80px;
 }
 
 .section-1-number-1 {
@@ -219,12 +221,20 @@ h6 {
     font-size: var(--fs-section-1-number-description);
 }
 
+.mt-big-numbers{
+    margin-top: 48px;
+}
+
 .section-1-left-heading {
     font-size: var(--fs-l3);
     letter-spacing: 1px;
     color: white;
     max-width: 65%;
     margin-top: 78px;
+}
+
+.tabs-image{
+    width: 45%;
 }
 
 #section-2 {
@@ -794,6 +804,10 @@ label span::after {
         --fs-l5: 46px !important;
     }
 
+    .hero-para{
+        width: 75% !important;
+    }
+
     label {
         display: block;
     }
@@ -884,6 +898,10 @@ label span::after {
         --fs-m1: 18px !important;
         --fs-l3: 35px !important;
         --fs-l5: 35px !important;
+    }
+
+    .hero-para{
+        width: 100% !important;
     }
 
         footer {
