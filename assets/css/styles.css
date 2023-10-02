@@ -807,7 +807,7 @@ label span::after {
     }
 
     .menu {
-        position: fixed;
+        position: absolute;
         background-color: rgba(0, 0, 0, 0.60);
         backdrop-filter: blur(12px);
         display: flex;
@@ -816,7 +816,7 @@ label span::after {
         align-items: center;
         top: 0;
         right: -100%;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         transition: all 300ms;
         gap: 18px;
